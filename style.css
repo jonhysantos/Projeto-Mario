@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
 }
 
 body {
@@ -73,4 +74,41 @@ button {
 
 .imagem-mario-luigi {
     height: 600px;
+}
+
+form.fale-conosco {
+    background-color: white;
+    display: flex; /*Podemos escolher a direção*/
+    flex-direction: column; /*neste caso escolhi a direção em coluna*/
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px; /* Adicona uma margem entre os campos de formulário*/
+    position: fixed;
+    left: -320px;
+    transition: 1s linear;
+    z-index: 4;
+}
+
+input {
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding-left: 10px;
+    outline-color: chartreuse;
+}
+
+textarea {
+    outline-color: chartreuse;
+    resize: none;
+}
+
+.mascara {
+    visibility: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    z-index: 3;
+
 }

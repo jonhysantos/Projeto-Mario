@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="caixa-video-mario">
         <video src="imagens/video.mp4" autoplay muted loop></video>
-            <div class="mascara-video"></div>
+        <div class="mascara-video"></div>
     </div>
     <div class="caixa-principal">
         <img src="imagens/logo.png" alt="Logo do super mario" class="logo-mario">
         <p>Encanadores Mario & Luigi - Resolvendo seus problemas com estílo!</p>
-        <p>Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos entupido ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia! Apresentamos a vocês os encanadores mais famosos do Reino do Cogumelos - Mario e Luigi!</p>
-        <button>Fale conosco</button>    
+        <p>Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos entupido ou
+            torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia! Apresentamos a
+            vocês os encanadores mais famosos do Reino do Cogumelos - Mario e Luigi!</p>
+        <button onclick="cliqueiNoBotao()">Fale conosco</button>
     </div>
-    
+
 
 
     <img src="imagens/mario.png" alt="logo mario e luigi" class="imagem-mario-luigi">
+
+    <form class="fale-conosco" action="">
+        <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+        <input type="tel" name="tel" id="tel" placeholder="Seu telefone" requires>
+        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        <button onclick="sumirFoormulario()">Enviar formulário</button>
+    </form>
+
+    <div class="mascara"></div>
 </body>
+<script src="java.js"></script>
 </html>
