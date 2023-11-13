@@ -84,7 +84,7 @@ form.fale-conosco {
     border-radius: 10px;
     gap: 20px; /* Adicona uma margem entre os campos de formulário*/
     position: fixed;
-    left: -320px;
+    left: -480px;
     transition: 1s linear;
     z-index: 4;
 }
@@ -95,11 +95,13 @@ input {
     border: 1px solid gray;
     padding-left: 10px;
     outline-color: chartreuse;
+    font-size: 24px;
 }
 
 textarea {
     outline-color: chartreuse;
     resize: none;
+    font-size: 24px;
 }
 
 .mascara {
